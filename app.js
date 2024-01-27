@@ -8,8 +8,6 @@ const app = express();
 
 dotenv.config();
 
-console.log(process.env.AUTH_KEY, process.env.LIST_ID);
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("Public"));
 
@@ -69,9 +67,3 @@ const portNumber = process.env.PORT || 3000;
 app.listen(portNumber, () => {
   console.log("Server is running at port 3000");
 });
-
-// LIST ID
-// 601dd7a890
-
-// API KEY
-// 9355503dc4a9e667a58ffe3150a44cc1-us21
